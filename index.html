@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js" defer></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <main class="main__content">
+      <article class="card main__card" id="main-card">
+        <header class="card__header">
+          <img src="/images/image-jeremy.png" alt="Profile picture" />
+          <div class="account__info">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </header>
+        <div class="button__group">
+          <button id="filterButtons" class="active__button" data-filter="daily">
+            Daily
+          </button>
+          <button id="filterButtons" data-filter="weekly">Weekly</button>
+          <button id="filterButtons" data-filter="monthly">Monthly</button>
+        </div>
+      </article>
+      <div class="card__container">
+        <div class="card__illustration work">
+          <img src="/images/icon-work.svg" alt="" />
+        </div>
+        <article class="card work__card" id="work">
+          <div class="card__info">
+            <div class="title__options">
+              <h2>Work</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="hours">
+              <p><span id="currentHours">5</span>hrs</p>
+              <p class="small">
+                Last Week - <span id="previousHours">7</span>hrs
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="card__container">
+        <div class="card__illustration play">
+          <img src="/images/icon-play.svg" alt="" />
+        </div>
+        <article class="card" id="play">
+          <div class="card__info">
+            <div class="title__options">
+              <h2>Play</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="hours">
+              <p><span id="currentHours">1</span>hrs</p>
+              <p class="small">
+                Last Week - <span id="previousHours">2</span>hrs
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="card__container">
+        <div class="card__illustration study">
+          <img src="/images/icon-study.svg" alt="" />
+        </div>
+        <article class="card" id="study">
+          <div class="card__info">
+            <div class="title__options">
+   <h2>Study</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+   </div>
+            <div class="hours">
+              <p><span id="currentHours">0</span>hrs</p>
+              <p class="small">
+    Last Week - <span id="previousHours">1</span>hrs
+              </p>
+            </div>
+          </div>
+  </article>
+      </div>
+      <div class="card__container">
+        <div class="card__illustration exercise">
+          <img src="/images/icon-exercise.svg" alt="" />
+        </div>
+        <article class="card" id="exercise">
+          <div class="card__info">
+            <div class="title__options">
+      <h2>Exercise</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="hours">
+    <p><span id="currentHours">1</span>hrs</p>       <p class="small">
+                Last Week - <span id="previousHours">1</span>hrs
+       </p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="card__container">
+        <div class="card__illustration social">
+          <img src="/images/icon-social.svg" alt="" />
+        </div>
+        <article class="card" id="social">
+          <div class="card__info">
+            <div class="title__options">
+    <h2>Social</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+            </div>
+            <div class="hours">
+     <p><span id="currentHours">1</span>hrs</p>
+              <p class="small">
+                Last Week - <span id="previousHours">3</span>hrs
+              </p>
+    </div>
+          </div>
+        </article>
+      </div>
+      <div class="card__container">
+        <div class="card__illustration self-care">
+          <img src="/images/icon-self-care.svg" alt="" />
+  </div>
+        <article class="card" id="self-care">
+          <div class="card__info">
+            <div class="title__options">       <h2>Self Care</h2>
+              <button><img src="/images/icon-ellipsis.svg" alt="" /></button>
+    </div>
+            <div class="hours">
+              <p><span id="currentHours">0</span>hrs</p>
+     <p class="small">
+                Last Week - <span id="previousHours">1</span>hrs
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <ul><li>&copy; 2024 - Haroun Jemmali</li></ul>
+    </footer>
+
+
+
+</body>
+</html>
